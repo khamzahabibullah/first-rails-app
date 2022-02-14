@@ -11,6 +11,24 @@
   </head>
 
   <body>
+    <div style="background: lightgray; padding: 3rem;">
+    <form action="/contact" method="get">
+  <input type="text" name="name" placeholder="Who are you looking for?" value=<%= params[:name] %>>
+  <input type="submit">
+</form>
+
+    <ul>
+      <li>
+  <%= link_to "Leanr more about us", about_path %>
+
+      </li>
+      <li>
+  <%= link_to "Get in touch", contact_us_path %>
+      </li>
+    </ul>
+
+</div>
+
     <%= yield %>
   </body>
 </html>
